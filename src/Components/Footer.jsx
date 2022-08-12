@@ -33,12 +33,12 @@ const Footer = () => {
         </div>
 
         <div className="footer_play flex flex-col ml-10">
-            <div className="footer_play_uppper flex items-center justify-between cursor-pointer">
-                <ShuffleIcon className="child"/>
-                <SkipPreviousRoundedIcon className="child"/>
-                <PlayCircleFilledRoundedIcon className="child" sx={{fontSize:45}}/>
-                <SkipNextRoundedIcon className="child"/>  
-                <RepeatIcon className="child"/>
+            <div className="footer_play_uppper flex items-center justify-between cursor-pointer text-gray-400">
+                <ShuffleIcon className="child hover:text-white"/>
+                <SkipPreviousRoundedIcon className="child hover:text-white"/>
+                <PlayCircleFilledRoundedIcon className="child transition ease-in delay-700 duration-700 hover:scale-125 text-white" sx={{fontSize:45}}/>
+                <SkipNextRoundedIcon className="child hover:text-white"/>  
+                <RepeatIcon className="child hover:text-white"/>
             </div>
             <div className="flex items-center space-x-10 mt-2 ">
                 <p classname="">0:00</p>
@@ -63,3 +63,7 @@ const Footer = () => {
 }
 
 export default Footer
+
+
+
+/*mongodb+srv://Sunil45:<password>@cluster0.iwteb4a.mongodb.net/?retryWrites=true&w=majority */

@@ -1,16 +1,22 @@
 import React from 'react'
-import Sidebar from './Components/Sidebar'
+import User from './Components/User'
+
 
 const App = () => {
   return (
-    <div className="App_parent">
-      <div className="App_child">
-        {<Sidebar/>}
-        {/*body*/}
-      </div>
-      {/*footer*/}
-    </div>
+    <>
+      <User/>
+    </>
   )
 }
 
 export default App
+
+ 
+//<div className="App_parent">
+//   <div className="App_child">
+//     {<Sidebar/>}
+//     {/*body*/}
+//   </div>
+//   {/*footer*/}
+// </div> */
