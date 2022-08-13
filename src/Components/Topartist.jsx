@@ -18,42 +18,39 @@ const Topartist = () => {
   display()
   console.log(data)
   return (
-    <div className="flex flex-col">
-    <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-      <div className="py-4 inline-block min-w-full sm:px-6 lg:px-8">
-        <div className="overflow-hidden">
+    <div className="">
           <table className="min-w-full text-center">
-            <thead className="border-b bg-gray-800">
-              <tr className="">
-                <th scope="col" className="text-sm font-medium text-white px-6 py-4">
+            <thead className="border-b bg-gray-800 text-xl w-full uppercase">
+              <tr className="flex items-center justify-around px-4 py-2">
+                <th scope="col" className="font-bold w-full text-white px-6 py-4">
                   Artists
                 </th>
-                <th scope="col" className="text-sm font-medium text-white px-6 py-4">
+                <th scope="col" className="font-bold w-full text-white px-6 py-4">
                   Date of Birth
                 </th>
-                <th scope="col" className="text-sm font-medium text-white px-6 py-4">
+                <th scope="col" className="font-bold w-full text-white px-6 py-4">
                   Songs
                 </th>
-                <th scope="col" className="text-sm font-medium text-white px-6 py-4">
+                <th scope="col" className="font-bold w-full text-white px-6 py-4">
                  Bio
                 </th> 
               </tr>
             </thead>
-            <tbody>
+            <tbody className="bg-white w-full flex flex-col">
               {data?(data.map((item)=>{
                 return(
                   <>
-                  <tr className="bg-white border-b ">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <tr className="bg-white border-b flex justify-around items-center px-4 py-4 text-lg uppercase">
+                    <td className="px-6 py-4 w-full whitespace-nowrap font-semibold ">
                      {item.name}
                     </td>
-                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-gray-900 font-semibold px-6 py-4 w-full whitespace-nowrap">
                       {item.dob}
                     </td>
-                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-gray-900 font-semibold px-6 py-4 w-full whitespace-nowrap">
                       {item.songs}
                     </td>
-                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-gray-900 font-semibold px-6 py-4 w-full whitespace-nowrap">
                       {item.bio}
                     </td>
                 </tr>
@@ -61,10 +58,7 @@ const Topartist = () => {
                 )})):(<h1>nothing</h1>)}
             </tbody>
           </table>
-        </div>
-      </div>
     </div>
-  </div>
   )
 }
 

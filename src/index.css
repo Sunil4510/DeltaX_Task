@@ -9,39 +9,44 @@
   .sidebar_child{
     flex: 0.15;
   }
-  /* .sidebar_hr{
-    border:1px solid rgb(52, 48, 48);
-    width:100%;
-  } */
+
   hr {
      background-color: rgb(43, 41, 41);
       height: 2px;
       border: 0;
       border-radius: 10px;;
    }
-
-  body::-webkit-scrollbar{
-    display: none;
-   }
    .sidebar_b{
-    overflow-y: overlay;
+    overflow-y: scroll;
    }
-.sidebar_b::-webkit-scrollbar{
+  .sidebar_b::-webkit-scrollbar{
+    display: none;
+  }
+
+  .sidebar_footer{
+    border-top: 1px solid rgb(73, 73, 73);
+    background-color:rgb(31, 30, 30)
+  }
+  .footer_album{
+    flex:0.33;
+  }
+  .footer_play{
+    flex:0.33;
+  }
+  .footer_volume{
+    flex: 0.34;
+  }
+
+  tbody{
+    height:410px;
+    overflow-y: scroll;
+}
+tbody::-webkit-scrollbar{
   display: none;
 }
-
-.sidebar_footer{
-  border-top: 1px solid rgb(73, 73, 73);
-  background-color:rgb(31, 30, 30)
-}
-.footer_album{
-  flex:0.33;
-}
-.footer_play{
-  flex:0.33;
-}
-.footer_volume{
-  flex: 0.34;
+thead,tbody{
+  display: block;
+  width: 80%
 }
 
 /* .footer_play_uppper{
